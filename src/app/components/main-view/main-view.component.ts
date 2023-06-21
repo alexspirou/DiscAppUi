@@ -31,6 +31,21 @@ artists: Artist[] = [];
         console.error(error);
       }
     );
+  }
+
+  onClickWantList() : void
+  {
+    // Open the component of the want list page. So maybe I could create one component for each wantlist and collection
+    // but they will have different data.
+    // Probaby DiscsView will be a child of main view.
+
+  }
+
+  onClickCollection() : void
+  {
+    // Open the component of the want list page. So maybe I could create one component for each wantlist and collection
+    // but they will have different data.
+    // Probaby DiscsView will be a child of main view.
 
   }
 }

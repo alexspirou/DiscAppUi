@@ -1,0 +1,28 @@
+.box 
+{
+  width: 30%;
+  background-color: gray;
+    display: flex;
+}
+
+.details
+{
+    text-align:left;
+
+
+
+}
+.image
+{
+    width: 50%;
+    border-radius: 5%;
+    background-size: cover; /* Resize the image to cover the entire container */
+
+
+}
+
+.title
+{
+    align-items: center;
+
+}

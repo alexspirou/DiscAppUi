@@ -1,17 +1,23 @@
 <app-header> </app-header>
 
 <div class = "image"></div>
- <header> ΠΑΡΕ ΤΟΝ ΑΠΟΣΤΟΛΗ</header>
 <div class="box-container">
   <div class="box">
-    <a>Collection</a>
+    <a href="#"
+      routerLink="/Collection/Collection"
+      (click)="onClickCollection()">Collection
+    </a>
+  </div>
+  <div class="gap">
   </div>
   <div class="box">
-    <a href="#">Wantlist</a>
+     <a routerLink="/Wantlist/Wantlist"
+    (click)="onClickWantList()">Wantlist</a>
   </div>
 </div>
 
-
+<div class = "footer">
+</div>
 
 
 
