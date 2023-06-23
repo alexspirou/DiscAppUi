@@ -1,28 +1,22 @@
 .box 
 {
-  width: 30%;
-  background-color: gray;
-    display: flex;
+    padding-top: -20px;
+
 }
 
 .details
 {
-    text-align:left;
-
-
 
 }
 .image
 {
-    width: 50%;
-    border-radius: 5%;
-    background-size: cover; /* Resize the image to cover the entire container */
+    width: 20vh;
+    border-radius: 12%;
+    grid-column: 1;
 
 
 }
 
 .title
 {
-    align-items: center;
-
 }
