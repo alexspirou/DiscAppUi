@@ -1,22 +1,32 @@
-.box 
+.container
 {
-    padding-top: -20px;
-
+    background-color: rgb(38, 35, 35);
+    
 }
-
-.details
+.even-columns
 {
-
+    display: flex;
 }
 .image
 {
-    width: 20vh;
-    border-radius: 12%;
-    grid-column: 1;
-
-
+    width: 60px;
 }
-
-.title
+.col
 {
+    padding: 10px;
+}
+.col{
+    color: aliceblue; 
+   text-decoration: none;
+   
+}
+.col a{
+    color: aliceblue; 
+   text-decoration: none;
+   
+}
+.col a:hover{
+    color: rgb(5, 138, 255); 
+   text-decoration: none;
+   
 }
