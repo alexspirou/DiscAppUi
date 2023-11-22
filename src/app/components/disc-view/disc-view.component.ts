@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { ReleaseDetailsDto } from 'src/app/data/Release/ReleaseDetailsDto';
+import { ReleaseService } from "../../services/release.service"
 @Component({
   selector: 'app-disc-view',
   templateUrl: './disc-view.component.html',
@@ -9,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class DiscViewComponent implements OnInit{
 
 
-  constructor(private route : ActivatedRoute)
+  constructor(private route : ActivatedRoute, private releaseService : ReleaseService)
    {
     
   }
@@ -17,11 +18,24 @@ export class DiscViewComponent implements OnInit{
   ngOnInit(): void
   {
     debugger;
-
+    this.getReleases();
+    
     const routeParams = this.route.snapshot.paramMap;
     this.msg  = String(routeParams.get('msg'));
 
   }  
+  releases: ReleaseDetailsDto[] = [];
+
+
+  getReleases(): void
+  {
+    debugger;
+    this.releaseService.getReleaseRange().subscribe(data => {
+      this.releases = data;
+    });
+  }
+
+
 }
 
 

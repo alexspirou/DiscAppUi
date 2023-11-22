@@ -1,11 +1,14 @@
 
+
 <div class ="container">
     <div class="content flow">
         <div class="even-columns">
+
             <div class = col> 
                 <img class="image" src ="https://i.discogs.com/f0jv1GdkuaKD7I-T2gGt_Xo_FwH2_9RCURGpD39Uk18/rs:fit/g:sm/q:90/h:416/w:416/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM2/Ny0xMTYzNjE5NDAx/LmpwZWc.jpeg" alt="">
             </div> 
-            <div class="col">  <a href="https://www.discogs.com/artist/{{id}}" (click)="onClick()">Alex Spyrou </a>- Gamath EP </div>
+            <div class="col">  <a routerLink="/Artist/{{releaseDetails.ArtistName}}"
+                (click)="onClick()">{{releaseDetails.ArtistName}}</a>- {{releaseDetails.Title}}</div>
             <div class="col" > <a>Genre : Electronic</a></div>
             <div class="col" > <a>Style : Hard Trance</a></div>
             <div class="col" > <a>Release Date : 1993</a></div>

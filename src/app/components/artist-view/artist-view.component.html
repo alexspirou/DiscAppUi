@@ -1,0 +1,25 @@
+<app-header> </app-header>
+<div class="profile-container">
+    
+    <div class="profile-image">
+      <img src="https://i.discogs.com/u5fyr7yXoBFlL6mUR-umN7zydqxay-LaeDRnTHOYqTE/rs:fit/g:sm/q:90/h:600/w:577/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEzMjgt/MTYyMDEzNjg1Ni04/OTgzLmpwZWc.jpeg" alt="Profile Image">
+    </div>
+
+    <div class="personal-details">
+        <p>{{artistDetails.ArtistName}}</p>
+        <p>Real Name : {{artistDetails.RealName}}</p>
+        <p>Sites : <a href="{{artistDetails.Links}}">{{artistDetails.Links}}</a></p>
+        <p>Country : {{artistDetails.Country}}</p>
+    </div>
+    
+
+
+
+
+</div>
+  
+<div class="releases">
+    <h1>Releases</h1>
+    <div *ngFor="let release of artistDetails.Releases">
+        <app-artist-release-details [releaseDetails]="release"> </app-artist-release-details>
+</div>

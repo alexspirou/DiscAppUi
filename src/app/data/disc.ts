@@ -1,11 +1,11 @@
-import { Artist } from "./artist";
+import { ArtistDto } from "./artistDetails";
 import { Genre } from "./genre";
 
 export interface Disc
 {
     discId :number;
     title : string;
-    artist : Artist;
+    artist : ArtistDto;
     country :string;
     releaseYear: number;
     genre : Genre 

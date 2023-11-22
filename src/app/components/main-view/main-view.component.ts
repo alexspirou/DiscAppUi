@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DiscService } from 'src/app/services/disc.service';
-import { Artist } from 'src/app/data/artist';
+
 
 @Component({
   selector: 'app-main-view',
@@ -11,26 +10,14 @@ export class MainViewComponent implements OnInit{
 /**
  *
  */
-constructor(private discService : DiscService )
+constructor()
  {  
 }
 
-artists: Artist[] = [];
 
   ngOnInit(): void
   {
-    this.discService.getAllDiscs().subscribe(
-      (artists) =>
-      {
-        // Handle the returned artists
-        this.artists = artists;
-        console.log(artists);
-      },
-      (error) => {
-        // Handle any errors
-        console.error(error);
-      }
-    );
+
   }
 
   onClickWantList() : void
